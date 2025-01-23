@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GenelAyarlar>
+  <OkulAdi>MERYEM ALBAYRAK TİCARET MESLEK LİSESİ</OkulAdi>
+  <OkulMuduru>HASAN MENGİ</OkulMuduru>
+  <OkulMudurYrd>MEHMET ALİ KORALAY</OkulMudurYrd>
+  <OgretimYili>2013-2014</OgretimYili>
+  <GunlukDersSaatiSayisi>8</GunlukDersSaatiSayisi>
+  <HaftalikGunSayisi>5</HaftalikGunSayisi>
+  <Gunler>
+    <Gun Sira="0">Pazartesi</Gun>
+    <Gun Sira="1">Salı</Gun>
+    <Gun Sira="2">Çarşamba</Gun>
+    <Gun Sira="3">Perşembe</Gun>
+    <Gun Sira="4">Cuma</Gun>
+  </Gunler>
+  <Saatler>
+    <Saat Sira="0">08:30-09:10</Saat>
+    <Saat Sira="1">09:20-10:00</Saat>
+    <Saat Sira="2">10:10-10:50</Saat>
+    <Saat Sira="3">11:00-11:40</Saat>
+    <Saat Sira="4">11:50-12:30</Saat>
+    <Saat Sira="5">13:30-14:10</Saat>
+    <Saat Sira="6">14:20-15:00</Saat>
+    <Saat Sira="7">15:10-15:50</Saat>
+  </Saatler>
+  <Kosullar>1111111111111111111111111111111111111111</Kosullar>
+</GenelAyarlar>

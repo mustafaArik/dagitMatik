@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{220D5FB5-3B09-40CC-A96E-5E806DCCE89C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DersDagitim</RootNamespace>
+    <AssemblyName>DağıtMatik</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.1</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>2F48E3488548DA95EDA071522D6928D405FE7B32</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>DağıtMatik_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>dagitMatik.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AkilliDagitimForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AkilliDagitimForm.Designer.cs">
+      <DependentUpon>AkilliDagitimForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaForm.Designer.cs">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="araclar.cs" />
+    <Compile Include="BilgiGirisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BilgiGirisForm.Designer.cs">
+      <DependentUpon>BilgiGirisForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DersProgramiOnIzlemeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DersProgramiOnIzlemeForm.Designer.cs">
+      <DependentUpon>DersProgramiOnIzlemeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ElProgramiFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ElProgramiFrm.Designer.cs">
+      <DependentUpon>ElProgramiFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formHakkinda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formHakkinda.Designer.cs">
+      <DependentUpon>formHakkinda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHavuzluTarama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHavuzluTarama.Designer.cs">
+      <DependentUpon>frmHavuzluTarama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KorDagitimiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KorDagitimiForm.Designer.cs">
+      <DependentUpon>KorDagitimiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DersProgrami.cs" />
+    <Compile Include="DersTanimlamaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DersTanimlamaForm.Designer.cs">
+      <DependentUpon>DersTanimlamaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenelAyarlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenelAyarlar.Designer.cs">
+      <DependentUpon>GenelAyarlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="iyilestirmeliTaramaYap.cs" />
+    <Compile Include="KontrolForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KontrolForm.Designer.cs">
+      <DependentUpon>KontrolForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="korDagitimYap.cs" />
+    <Compile Include="KosulForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KosulForm.Designer.cs">
+      <DependentUpon>KosulForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tanimlar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TanimliDersAnaliz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TanimliDersAnaliz.Designer.cs">
+      <DependentUpon>TanimliDersAnaliz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TanimliDersListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TanimliDersListesi.Designer.cs">
+      <DependentUpon>TanimliDersListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yerlesimHavuzluTarama.cs" />
+    <EmbeddedResource Include="AkilliDagitimForm.resx">
+      <DependentUpon>AkilliDagitimForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnaForm.resx">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BilgiGirisForm.resx">
+      <DependentUpon>BilgiGirisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DersProgramiOnIzlemeForm.resx">
+      <DependentUpon>DersProgramiOnIzlemeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ElProgramiFrm.resx">
+      <DependentUpon>ElProgramiFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formHakkinda.resx">
+      <DependentUpon>formHakkinda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHavuzluTarama.resx">
+      <DependentUpon>frmHavuzluTarama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KorDagitimiForm.resx">
+      <DependentUpon>KorDagitimiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DersTanimlamaForm.resx">
+      <DependentUpon>DersTanimlamaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenelAyarlar.resx">
+      <DependentUpon>GenelAyarlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KontrolForm.resx">
+      <DependentUpon>KontrolForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KosulForm.resx">
+      <DependentUpon>KosulForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TanimliDersAnaliz.resx">
+      <DependentUpon>TanimliDersAnaliz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TanimliDersListesi.resx">
+      <DependentUpon>TanimliDersListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DağıtMatik_TemporaryKey.pfx" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dagitMatik.ico" />
+    <None Include="Resources\untitled.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
